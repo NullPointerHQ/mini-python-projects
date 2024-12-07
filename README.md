@@ -4,8 +4,8 @@
 _What the “Roadmap” Looks Like? Real Python. Retrieved December 7, 2024, [Link](https://realpython.com/python-basics/)_
 
 ## 🔖Table of Contents
-1. [Introduction](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#introductory)
-    - [Project Objectives](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#universal-prerequisites)
+1. [Introduction](https://github.com/NullPointerHQ/mini-python-projects#introductory)
+    - [Project Objectives](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#project-objectives)
     - [Universal Prerequisites](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#universal-prerequisites)
  2. [isPrime](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#isprime)
     -  [Overview](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#overview)
