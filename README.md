@@ -38,6 +38,7 @@ Thanks to these programs I was able to understand the syntaxes for variables, ba
 # 🔢 isPrime
 ### Overview
 [Convenient Source Code Link](isPrime/isPrime.py)
+
 This program will prompt you for a number, determine whether it is prime or not, and ask if you would like to continue. The program will repeat until you would like it to stop. 
 
 There are three conditions a number must meet to be considered prime
@@ -85,6 +86,9 @@ This program uses standard mathematical conventions for determining the prime st
 ![Temp Image](https://www.freesignprinter.com/images/printable-work-in-progress-sign.png)
 # Temperature Converter 
 ### Overview
+[Convenient Source Code Link](PythonPractice1/PythonPractice1.py)
+This program will take a `temperature` and `unit` and converts it to the other two units for temperatures (e.g Celsius and Kelvin if you provide a Fahrenheit temperature), when entering values be sure to seperate
+the quantity from the unit via a space (e.g 100 F)
 ### Prerequisites
 No additional prerequisites.
 ## Configuration and Usage
