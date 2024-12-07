@@ -6,19 +6,19 @@ _What the “Roadmap” Looks Like? Real Python. Retrieved December 7, 2024, [Li
 ## 🔖Table of Contents
 1. [Introduction](https://github.com/NullPointerHQ/mini-python-projects#introductory)
     - [Project Objectives](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#project-objectives)
-    - [Universal Prerequisites](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#universal-prerequisites)
- 2. [isPrime](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#isprime)
-    -  [Overview](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#overview)
-    - [Prerequisites](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#prerequisites)
-    - [Configuration and Usage](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#configuration-and-usage)
-    - [Configurable Options](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#configurable-options)
-    - [Usage](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#usage)
-3. [Temperature Converter](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#temperature-converter) 
-    - [Overview](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#overview-1)
-    - [Prerequisites](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#prerequisites-1)
-    - [Configuration and Usage](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#configuration-and-usage-1)
-    - [Configurable Options](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#configurable-options-1)
-    - [Usage](https://github.com/NullPointerHQ/mini-python-projects/new/main?filename=README.md#usage-1)
+    - [Universal Prerequisites](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#universal-prerequisites)
+ 2. [isPrime](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#-isprime)
+    -  [Overview](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#overview)
+    - [Prerequisites](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#prerequisites)
+    - [Configuration and Usage](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#configuration-and-usage)
+    - [Configurable Options](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#configurable-options)
+    - [Usage](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#usage)
+3. [Temperature Converter](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#temperature-converter) 
+    - [Overview](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#overview-1)
+    - [Prerequisites](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#prerequisites-1)
+    - [Configuration and Usage](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#configuration-and-usage-1)
+    - [Configurable Options](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#configurable-options-1)
+    - [Usage](https://github.com/NullPointerHQ/mini-python-projects?tab=readme-ov-file#usage-1)
 
 # 👋Introductory
 ### Project Objectives
@@ -81,17 +81,40 @@ This program uses standard mathematical conventions for determining the prime st
 1. Run the program in your preferred IDE
 2. Enter a **whole** number (e.g 7, 8, 9)
 3. Enter Y to repeat or N to end the program
---Work In Progress From Here--
-
-![Temp Image](https://www.freesignprinter.com/images/printable-work-in-progress-sign.png)
-# Temperature Converter 
+# 🌡Temperature Converter 
 ### Overview
 [Convenient Source Code Link](PythonPractice1/PythonPractice1.py)
-This program will take a `temperature` and `unit` and converts it to the other two units for temperatures (e.g Celsius and Kelvin if you provide a Fahrenheit temperature), when entering values be sure to seperate
-the quantity from the unit via a space (e.g 100 F)
+
+This program will take a `temperature` and `unit` and converts it to the other two units for temperatures (e.g Celsius and Kelvin if you provide a Fahrenheit temperature) when entering values be sure to seperate
+the quantity from the unit via a space (e.g 100 F). The program will automatically seperate your input:
+```python
+degrees, unit = userInput.split()#Should Split the User's input into two values
+```
+and call the appropriate functions:
+```python
+#Handles Conversions
+if(unit == 'K'):
+    print(f"Converted to Fahrenheit: {kelvinTofarenheit(degrees):.4f},\nConverted to Celsius: {kelvinTocelsius(degrees):.4f}")
+
+if(unit == 'C'):
+    print(f"Converted to Fahrenheit: {celsiusTofarenheit(degrees):.2f},\nConverted to Kelvin: {celsiusTokelvin(degrees):.2f}")
+if(unit == 'F'):
+    print(f"Converted to Celsius: {farenheitTocelsius(degrees):.2f}\nConverted to Kelvin: {farenheitTokelvin(degrees):.2f}")
+```
+The conversion functions do simple step-by-step arithmetic using standard conversion formulas, `fahrenheitTocelsius` as an example:
+```python
+def farenheitTocelsius (degrees):
+    result = degrees - 32
+    result = result * 5
+    result = result / 9
+    return result;
+```
 ### Prerequisites
-No additional prerequisites.
+This program has no additional prerequisites
 ## Configuration and Usage
 ### Configurable Options
-This program uses standard formulas to convert provided temperatures, 
+There are no options that can be configured pre-runtime
 ### Usage
+1. Open your preferred IDE and run the program
+2. Enter a temperature value and unit seperated by a space
+3. Observe the results.
