@@ -1,5 +1,6 @@
 # Collection of Mini Python Projects 
 ![Figure 0: Cover Image](https://realpython.com/cdn-cgi/image/width=960,format=auto/https://files.realpython.com/media/Newbie_Watermarked.a9319218252a.jpg)
+
 ⚖️ _Image Credits: Real Python. (n.d.). Are You Learning Python, But You’re Not Sure Where to Start and_ 
 _What the “Roadmap” Looks Like? Real Python. Retrieved December 7, 2024, [Link](https://realpython.com/python-basics/)_
 
